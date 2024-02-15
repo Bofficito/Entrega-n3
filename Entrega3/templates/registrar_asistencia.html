@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Asistencia</title>
+</head>
+<body>
+    <h1>Registrar Asistencia para {{ evento.nombre }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ usuario_form.as_p }}
+        <button type="submit">Registrarse</button>
+    </form>
+    <a href="/app/inicio"><button>Ir a inicio</button></a>
+</body>
+</html>

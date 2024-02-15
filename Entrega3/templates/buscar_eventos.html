@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Eventos</title>
+</head>
+<body>
+    <h1>Buscar Eventos</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+    </form>
+    <a href="/app/inicio"><button>Ir a inicio</button></a>
+</body>
+</html>

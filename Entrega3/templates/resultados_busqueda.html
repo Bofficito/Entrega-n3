@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados de Búsqueda</title>
+</head>
+<body>
+    <h1>Resultados de Búsqueda para "{{ busqueda }}"</h1>
+    <ul>
+    {% for evento in eventos %}
+        <li><a href="{% url 'detalle_evento' evento.id %}">{{ evento.nombre }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

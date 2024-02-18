@@ -6,9 +6,13 @@
 </head>
 <body>
     <h1>Detalles del Evento</h1>
-    <p><strong>Descripción:</strong> {{ evento.descripcion }}</p>
-    <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
-    <p><strong>Dirección:</strong> {{ evento.direccion }}</p>
+    <ul>
+        {% for evento in eventos %}
+        <p><strong>Descripción:</strong> {{ evento.descripcion }}</p>
+        <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
+        <p><strong>Dirección:</strong> {{ evento.direccion }}</p>
+        {% endfor %}
+    </ul>
     <a href="/app/inicio"><button>Ir a inicio</button></a>
 </body>
 </html>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+    <meta charset="UTF-8">
+    <title>{% block title %}Título por Defecto{% endblock %}</title>
 </head>
 <body>
-  <h1>Qué desea hacer?</h1>
-  <a href="/admin/"><button>Iniciar como Administrador</button></a>
-  <a href="/app/lista"><button>Lista de Eventos</button></a>
-  <a href="/app/evento"><button>Detalles del Evento</button></a>
-  <a href="/app/registrar"><button>Registrar Asistencia</button></a>
-  <a href="/app/buscar"><button>Buscar Evento</button></a>
+    <header>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

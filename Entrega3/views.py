@@ -23,9 +23,6 @@ def añadir_eventos(request):
         añadir_form = EventoForm()
     return render(request, 'registrar_eventos.html', {'form': añadir_form})
 
-def evento_registrado_exitosamente(request):
-    return render(request, 'evento_registrado_exitosamente.html')
-
 def registrar_usuario(request):
     if request.method == "POST":
         usuario_form = UsuarioForm(request.POST)
